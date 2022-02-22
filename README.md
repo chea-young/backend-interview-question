@@ -966,7 +966,7 @@ print("hello world!")
 <details>
   <summary>List와 Tuple의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>- list는 가변적이며 tuple은 수정이 불가능하</p>
 </details>
 
 <details>
