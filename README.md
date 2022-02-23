@@ -895,13 +895,7 @@ print("hello world!")
 <details>
   <summary>List와 Tuple의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p>- list는 가변적이며 tuple은 수정이 불가능하</p>
-</details>
-
-<details>
-  <summary>파이썬 코루틴에 대해 아는대로 설명해주세요.</summary>
-  </br>
-  <p></p>
+  <p>- list는 가변적이며 tuple은 수정이 불가능하지만 속도가 더 빠릅니다.</p>
 </details>
 
 <details>
@@ -911,45 +905,45 @@ print("hello world!")
 </details>
 
 <details>
-  <summary>GIL에 대해 설명해주세요.</summary>
-  </br>
-  <p></p>
-</details>
-
-<details>
-  <summary>MRO에 대해 설명해주세요.</summary>
-  </br>
-  <p></p>
-</details>
-
-<details>
   <summary>Magic Method에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>파이썬 객체 내부적으로 구현된(built-in) 메소드를 구현하는 것입니다.</p>
 </details>
 
 <details>
   <summary>__new__와 __init__의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>__init__ : 클래스 인스터스 형태인 객체(Object)가 생성(Created/Instantiated)되어 초기화(Initialized)되는 즉시 호출(Called)되기는 하지만, 객체에 메모리를 할당하지 않는특수한 메소드라는 것입니다.</p>
+  <p>__new__: init 전에 먼저 실행되어 새로운 인스턴스를 만들때 가장 먼저 호출된다. 클래스를 받아 실제로 인스턴스를 생성하고 __init__에게 인자들을 넘겨줍니다.</p>
 </details>
 
 <details>
   <summary>__repr__와 __str__의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>__repr__: 인스턴스를 repr() 으로 호출할 때 호출되며, 기계가 읽기 쉬운 문자열을 출력하는 것을 목표로 합니다.</p>
+  <p>str: 인스턴스를 str() 으로 호출할 때 호출되며, 사용자에게 읽기 쉬운 문자열을 출력하는 것을 목표로 합니다.</p>
 </details>
 
 <details>
-  <summary>r string과 u string에 대해 설명해주세요.</summary>
+  <summary>array와 list의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>array : 요소의 data type이 동일해야 함 (import array)</p>
+  <p>list : 요소의 data type 상관 없음</p>
 </details>
 
 <details>
-  <summary>Call by Assignment에 대해 설명해주세요.</summary>
+  <summary>iterators와 generator 의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>iterators: collection이나 문자열 하나씩 데이터 처리할 수 있는 iterable 객체의 iterator를 return</p>
+  <p>generator : iterator의 특수 함수 형태로 함수 내 yield를 통해 데이터 하나씩 return</p>
+</details>
+
+<details>
+  <summary>Call by --에 대해 설명해주세요.</summary>
+  </br>
+  <p> Call by value : 인자로 받은 값을 복사하여 처리</p>
+  <p>Call by reference : 인자로 받은 값의 주소값을 참조</p>
+  <p>Call by object : Python 내에서는 모든 것을 객체로 보고 immutable object(int, float, str, tuple)은 call by value로 동작 / mutable object(list, dict, set)은 call by reference로 동작</p>
 </details>
 
 <details>
@@ -961,13 +955,14 @@ print("hello world!")
 <details>
   <summary>global과 nonlocal 키워드의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>Global Variables : 모든 global 영역에서 접근 가능한 변수</p>
+  <p>Local Variables : function 안에서 정의되는 변수</p>
 </details>
  
 <details>
   <summary>classmethod와 staticmethod의 차이에 대해 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>@staticmethod 인 경우에는 부모 클래스의 속성 값을 가져오지만, @classmethod 의 경우 cls 인자를 활용하여 클래스의 클래스 속성을 가져옵니다.</p>
 </details>
  
 ## 기타
