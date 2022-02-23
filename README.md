@@ -1013,13 +1013,13 @@ print("hello world!")
 <details>
   <summary>빌더 패턴에 대해서 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>복잡한 객체를 생성하는 클래스와 표현하는 클래스를 분리하여, 동일한 절차에서도 서로 다른 표현을 생성하는 방법을 제공한다.</p>
 </details>
 
 <details>
   <summary>팩토리 메서드 패턴에 대해서 설명해주세요.</summary>
   </br>
-  <p></p>
+  <p>객체를 만드는 부분을 Sub class에 맡기는 패턴입니다.</p>
 </details>
 
 <details>
