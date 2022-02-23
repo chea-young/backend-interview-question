@@ -767,7 +767,7 @@ print("hello world!")
 <details>
   <summary>IoC 컨테이너의 역할은 무엇이 있을까요?</summary>
   </br>
-  <p>애플리케이션 실행시점에 빈 오브젝트를 인스턴스화하고 DI 한 후에 최초로 애플리케이션을 기동할 빈 하나를 제공해준다</p>
+  <p>애플리케이션 실행시점에 빈 오브젝트를 인스턴스화하고 DI 한 후에 최초로 애플리케이션을 기동할 빈 하나를 제공해줍니다.</p>
 </details>
 
 <details>
@@ -783,12 +783,6 @@ print("hello world!")
   <summary>Autowiring 과정에 대해서 설명해주세요.</summary>
   </br>
   <p>컨테이너에서 타입(인터페이스 또는 오브젝트)을 이용해 의존 대상 객체를 검색하고 할당할 수 있는 빈 객체를 찾아 주입한다</p>
-</details>
-
-<details>
-  <summary>Spring Web MVC의 Dispatcher Servlet의 동작 원리에 대해서 간단히 설명해주세요.</summary>
-  </br>
-  <p></p>
 </details>
 
 <details>
@@ -856,7 +850,6 @@ print("hello world!")
 </details>
 
 #### JPA
-
 <details>
   <summary>JPA 영속성 컨텍스트의 이점(5가지)을 설명해주세요.</summary>
   </br>
