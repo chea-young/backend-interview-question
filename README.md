@@ -51,6 +51,65 @@ print("hello world!")
 
 ## CS 관련 지식
 
+### 프로그래밍 공통
+
+<details>
+  <summary> 프레임워크와 라이브러리 차이</summary>
+  </br>
+  둘의 차이는 실행 흐름에 대한 제어 권한이 어디에 있는지에 따라 달라집니다.
+- 프레임워크: 전체적인 흐름을 자체적으로 제어한다
+- 라이브러리: 사용자가 흐름에 대한 제어를 하며 필요한 상황에 가져다가 쓸 수 있다. 
+- 
+</details>
+
+<details>
+  <summary>동기와 비동기의 차이 </summary>
+  </br>
+- 동기: 요청을 보내고 실행이 끝나면 다음 동작을 처리하는 방식입니다. 여러가지 요청을 동시에 처리할 수 없어 효율이 떨어진다.
+- 비동기 : 요청을 보내고 해당 동작의 처리 여부와 상관없이 다음 요청이 동작하는 방식입니다. 작업이 완료되는 시간을 기다릴 필요가 없기 때문에 자원을 효율적으로 사용할 수 있습니다. 하지만 작업이 완료되 ㄴ결과를 제어하기 어렵습니다.
+
+</details>
+
+</details>
+<details>
+  <summary>SQL Injection </summary>
+  </br>
+- SQL Injection이란 공격자가 악의적인 의도를 갖는 구문을 삽입하여 공격자가 원하는 SQL을 실행하도록 하는 웹해킹기법입니다.
+
+</details>
+
+</details>
+<details>
+  <summary>메세지 큐(Message Queue)란?</summary>
+  </br>
+- Queue 자료구조를 이용하여 데이터(메세지)를 관리하는 시스템으로, 비동기 통신 프로토콜을 제공하여 메세지를 빠르게 주고 받을 수 있게 해준다.메세지 큐에서는 Producer(생산자)가 Message를 Queue에 넣어두면, Consumer가 Message를 가져와 처리하게 됩니다.
+
+</details>
+
+</details>
+<details>
+  <summary>[ Docker(도커) ]</summary>
+  </br>
+- Docker는 컨테이너 기반의 가상화 기술입니다.
+- 장점: 쉽고 빠르게 실행 환경 구축 가능, 하드웨어 자원 절감, Docker Hub와 같은 공유 환경을 제공합니다.
+
+</details>
+
+</details>
+<details>
+  <summary> TDD(Test-Driven Development)</summary>
+  </br>
+TDD(Test-Driven Development)는 매우 짧은 개발 사이클의 반복에 의존하는 개발 프로세스로, 개발자는 우선 요구되는 기능에 대한 테스트케이스를 작성하고, 그에 맞는 코드를 작성하여 테스트를 통과한 후에 상황에 맞게 리팩토링하는 테스트 주도 개발 방식을 의미합니다.
+
+</details>
+</details>
+<details>
+  <summary>DDD(Domain-Driven Design) </summary>
+  </br>
+실세계에서 사건의 발생하는 집합인 Domain(도메인)을 중심으로 설계하는 방법입니다. 이러한 도메인들이 서로 상호작용하며 설계하는 것이 도메인 주도 설계입니다. 
+
+</details>
+
 ### 네트워크
 
 <details>
@@ -165,7 +224,7 @@ print("hello world!")
     - 계층화 -> 클라이언트는 rest api 서버만 호출하고 
     - 인터페이스의 일관성 -> URI로 지정한 자원에 대한 조작을 통일되고 한정적인 인터페이스로 수행
   <p>이러한 REST 기반의 API를 웹으로 구현한 것이 RESTful API</p>
-  <p>REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 차원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식입니다. RESTful API는 아래와 같은 것들로 구성됩니다. </p>
+  <p>REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 차원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식입니다. RESTful API는 아래와 같은 것들로 구성됩니다. 자원URI, 요청 방식, 자원의 형태(json) </p>
 </details>
 
 <details>
@@ -1197,12 +1256,6 @@ print("hello world!")
 ### 인프라/클라우드
 
 <details>
-  <summary>AWS 인프라를 구축해보았다면 설명해주세요.</summary>
-  </br>
-  <p></p>
-</details>
-
-<details>
   <summary>로드 밸런서에 대해서 설명해주세요.</summary>
   </br>
   <p>둘 이상의 CPU or 저장장치와 같은 컴퓨터 자원들에게 작업을 나누는 것을 의미합니다.</p>
@@ -1252,7 +1305,7 @@ print("hello world!")
   </br>
   <p>도커는 컨테이너 기반의 오픈소스 가상화 플랫폼입니다. </p>
   <p>컨테이너와 가상머신 비교
-가상머신으로 사용한다면 구성 요소 프로세스뿐만 아니라 시스템 프로세스를 실행해야 하기 때문에 추가 컴퓨팅 리소스가 필요하다. 반면 컨테이너는 호스트 OS에서 실행되는 하나의 격리된 프로세스이기 때문에 애플리케이션이 소비하는 리소스만 소비하고 추가 프로세스의 오버헤드는 없기 때문입니다. </p>
+가상머신으로 사용한다면 구성 요소 프로세스뿐만 아니라 시스템 프로세스를 실행해야 하기 때문에 추가 컴퓨팅 리소스가 필요합니다. 하지만 컨테이너는 호스트 OS에서 실행되는 하나의 격리된 프로세스이기 때문에 애플리케이션이 소비하는 리소스만 소비하고 추가 프로세스의 오버헤드는 없습니다. </p>
 </details>
 
 <details>
