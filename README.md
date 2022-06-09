@@ -303,6 +303,13 @@ TDD(Test-Driven Development)는 매우 짧은 개발 사이클의 반복에 의�
 
 </details>
 <details>
+  <summary>박싱/언박싱</summary>
+  </br>
+- 박싱/언박싱 자료의 형변환이 일어날 때 값 형식을 참조형식으로 박싱, 참조형식을 값형식으로 언박싱입니다.
+</details>
+
+</details>
+<details>
   <summary>트리</summary>
   </br>
 -  정점과 간선을 이용해 사이클을 이루지 않도록 구성한 Graph의 특수한 형태로, 계층이 있는 데이터를 표현하기에 적합합니다.
@@ -420,6 +427,14 @@ TDD(Test-Driven Development)는 매우 짧은 개발 사이클의 반복에 의�
 </details>
 
 ### 운영체제
+
+</details>
+<details>
+  <summary>커널</summary>
+  </br>
+- 프로세스, 메모리, 저장장치를 핵심적으로 관리합니다.
+</details>
+
 
 </details>
 <details>
@@ -877,7 +892,7 @@ B+Tree
 <details>
   <summary>오버라이딩과 오버로딩이 무엇이며 어떤 차이가 있을까요?</summary>
   </br>
-  
+
   <p>오버라이딩은 상위 클래스의 메소드를 재정의 하는 것을 의미합니다. </p>
   <p>오버로딩은 같은 클래스 내에서 동일한 메소드 이름을 가지지만, 매개변수의 타입, 개수가 다르게 구현할 수 있는 것을 의미하며 컴파일 타임 다형성이기도 합니다. 따라서 오버라이딩 될 수 있습니다.</p>
   <p>추가로 `@Override`를 써야하는 이유를 꼭 생각해보세요. 이 애노테이션은 컴파일 타임에 오버라이딩에 대한 안정성을 부여해주기 때문에 반드시 써주는 것이 좋습니다.</p>
@@ -886,15 +901,30 @@ B+Tree
 <details>
   <summary>인터페이스와 추상클래스의 차이점에 대해 설명해주세요.</summary>
   </br>
-  <p>인터페이스는 구현 객체가 같은 동작을 한다는 것을 보장하기 위해 사용합니다. 다중 상속이 가능합니다. 인터페이스를 구현하는 집합간에는 관계가 없을 수 있습니다.</p>
-  <p>추상클래스는 공통된 개념을 표현할 때 사용합니다. 단일 상속만 가능합니다. 추상클래스를 상속하는 집합 간에는 연관관계가 있습니다.</p>
+  <p>인터페이스는 구현 객체가 같은 동작을 한다는 것을 보장하기 위해 사용합니다. 다중 상속이 가능합니다. public 접근 제어자만 가능하며, 상수, 추상 메소드만 선언할 수 있습니다. 인터페이스를 구현하는 집합간에는 관계가 없을 수 있습니다.</p>
+
+  <p>추상클래스는 공통된 개념을 표현할 때 사용합니다. 단일 상속만 가능합니다. 모든 접근 제어자를 사용할 수 있습니다. 변수, 상수, 추상메소드, 일반 메소드 선언 가능합니다. 추상클래스를 상속하는 집합 간에는 연관관계가 있습니다.</p>
 </details>
 
 <details>
-  <summary>클래스는 무엇이고 객체는 무엇인가요?</summary>
+  <summary>클래스, 객체, 인스턴스</summary>
   </br>
   <p>클래스는 객체를 정의하는 틀 또는 설계도와 같은 의미로 사용됩니다.</p>
-  <p>객체는 식별 가능한 개체 또는 사물입니다. 객체는 구별 가능한 식별자, 특징적인 행동, 변경 가능한 상태를 가집니다. 인스턴스들을 통칭하는 용도로 사용합니다.</p>
+  <p>객체는 클래스를 기반으로 선언된 대상으로 식별 가능한 개체 또는 사물입니다. 객체는 구별 가능한 식별자, 특징적인 행동, 변경 가능한 상태를 가집니다. 인스턴스들을 통칭하는 용도로 사용합니다.</p>
+  - 인스턴스: 객체에 메모리가 할당되어 실제로 활용되는 실체
+</details>
+
+</details>
+<details>
+  <summary>Java의 Vector와 ArrayList 차이</summary>
+  Vector
+- 동기화를 지원한다.
+- 크기가 증가하는 경우, 2배 증가함(10 -> 20)
+ArrayList
+- 동기화를 지원하지 않는다.
+- 크기가 증가하는 경우, 1.5배 증가함(10 -> 15)
+  </br>
+
 </details>
 
 <details>
@@ -957,6 +987,30 @@ B+Tree
   <p>StringBuilder와 StringBuffer는 Thread-safe 여부의 차이가 있습니다. StringBuilder는 Thread-safe하지 않습니다. 따라서 Multi-Thread 환경에서 사용할 때는 StringBuffer를 사용합니다.</p>
 </details>
 
+</details>
+<details>
+  <summary>synchronized</summary>
+  - 여러 쓰레드가 하나의 자원을 이용하고자 할 때, 한 스레드가 해당 자원을 사용중인 경우, 데이터에 접근할 수 없도록 막는 키워드입니다.
+  </br>
+
+</details>
+
+</details>
+<details>
+  <summary>람다(Lambda)와 람다(Lambda)의 사용법</summary>
+  </br>
+- 람다는 불필요한 코드를 줄이고, 가독성을 높이기 위한 익명 함수로써, 함수의 이름과 반환타입 없이 손쉽게 함수를 선언할 수 있습니다.
+</details>
+
+</details>
+<details>
+  <summary>Java의 동작 과정</summary>
+  </br>
+1. Java 소스 파일을 javac로 컴파일하여 class파일(Java 바이트 코드)을 생성합니다.
+2. 클래스로더가 컴파일된 Java 바이트 코드를 런타임 데이터 영역(Runtime Data Areas)로 로드합니다.
+3. 실행 엔진(Execution Engine)이 자바 바이트코드를 실행합니다.
+</details>
+
 <details>
   <summary>Checked Exception과 Unchecked Exception에 대해 설명해주세요. 스프링 트랜잭션 추상화에서 rollback 대상은 무엇일까요?</summary>
   </br>
@@ -1005,6 +1059,59 @@ B+Tree
 </details>
 
 #### Spring
+
+[ Servlet(서블릿)이란? ]
+서블릿이란 클라이언트의 요청을 처리하고, 그 결과를 반환하는 Servlet 클래스의 구현 규칙을 지킨 자바 웹 프로그래밍 기술입니다.
+
+[ Spring 기초지식(DI, DL, IoC, AOP) ]
+
+DI(Dependency Injection): 한 객체에서 다른 객체를 필요로 하여 의존성을 갖게 하는 기술
+DL(Dependency Look-up): 한 객체에서 필요로 하는 다른 객체를 찾아서 사용하는 기술
+IoC(Inversion of Control): 직접 제어야하는 부분에 대한 권한을 프레임워크 등에 넘기는 기술
+AOP(Aspect Oriented Programming): 공통의 관심 사항을 추출하여 원하는 곳에 적용하는 기술
+
+</details>
+<details>
+  <summary>VO와 DTO, BO, DAO란</summary>
+  </br>
+DAO(Data Access Object): DB에 접근하여 실제 데이터를 조회 또는 조작하는 클래스, Repository 또는 Mapper에 해당함
+BO(Business Object): 여러 DAO를 활용해 비지니스 로직을 처리하는 클래스, Service에 해당함
+DTO(Data Transfer Object): 데이터를 주고 받기 위해 사용하는 클래스
+VO(Value Object): 실제 데이터만을 저장하는 클래스
+</details>
+
+</details>
+<details>
+  <summary>MVC 패턴</summary>
+  </br>
+- MVC(Model-View-Controller)패턴은 아키텍쳐를 설계하기 위한 디자인 패턴입니다. 
+- Model: 데이터를 저장하는 컴포넌트
+- View: 사용자 인터페이스(UI) 컴포넌트
+- Controller: 사용자의 요청을 처리하고 Model과 View를 중개하는 컴포넌트
+
+<작동원리>
+1. 클라이언트는 URL을 통해 요청을 전송한다.
+2. 디스패처 서블릿은 핸들러 매핑을 통해 해당 요청이 어느 컨트롤러에게 온 요청인지 찾는다.
+3. 디스패처 서블릿은 핸들러 어댑터에게 요청의 전달을 맡긴다.
+4. 핸들러 어댑터는 해당 컨트롤러에 요청을 전달한다.
+5. 컨트롤러는 비지니스 로직을 처리한 후에 반환할 뷰의 이름을 반환한다.
+6. 디스패처 서블릿은 뷰 리졸버를 통해 반환할 뷰를 찾는다.
+7. 디스패처 서블릿은 컨트롤러에서 뷰에 전달할 데이터를 추가한다.
+8. 데이터가 추가된 뷰를 반환한다.  
+</details>
+
+</details>
+<details>
+  <summary>Spring MVC란</summary>
+  </br>
+- Spring MVC란 웹 애플리케이션 개발을 위한 MVC 패턴 기반의 웹 프레임워크입니다
+Dispatcher Servlet: 클라이언트의 요청을 먼저 받아들이는 서블릿으로, 요청에 맞는 컨트롤러에게 요청을 전달함
+Handler Mapping: 해당 요청이 어떤 컨트롤러에게 온 요청인지 검사함
+Controller: 클라이언트의 요청을 받아 처리하여 결과를 디스패처 서블릿에게 전달함
+ViewResolver: View의 이름을 통해 알맞은 View를 찾음
+View: 사용자에게 보여질 UI 화면
+</details>
+
 
 <details>
   <summary>Spring DI/IoC는 어떻게 동작하나요?</summary>
@@ -1088,19 +1195,14 @@ B+Tree
   <p>두 어노테이션 모두 IoC 컨테이너에 Bean을 등록하기 위해 사용합니다</p>
   <p>@Component : 개발자가 작성한 class를 기반으로 실행시점에 인스턴스 객체를 1회(싱글톤) 생성합니다</p>
   <p>@Controller, @Service, @Repository 는 모두 @Component 이며 실행시점에 자동으로 의존성을 주입합니다</p>
-  <p>@Bean : 개발자가 작성한 method를 기반으로 메서드에서 반환하는 객체를 인스턴스 객체로 1회(싱글톤) 생성합니다</p>
+  - @Configuration: 1개 이상의 @Bean 메소드를 갖는 클래스의 경우에 반드시 명시해 주어야 함
+  <p>@Bean: 개발자가 직접 제어가 불가능한 외부 라이브러리 또는 설정을 위한 클래스를 Bean으로 등록할 때 사용</p>
 </details>
 
 <details>
   <summary>POJO란 무엇인가요? Spring Framework에서 POJO는 무엇이 될 수 있을까요?</summary>
   </br>
   <p>POJO는 프레임워크 인터페이스, 클래스를 구현하거나 확장하지 않은 단순한 클래스로 Java에서 제공하는 API 외에 종속되지 않습니다. 특정 환경에 종속되지 않아 코드가 간결하고 테스트 자동화에 유리합니다. 스프링에서는 도메인과 비즈니스 로직을 수행하는 대상이 POJO대상이 될 수 있습니다.</p>
-</details>
-
-<details>
-  <summary>Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 요청을 수행할텐데, 어떻게 1개의 Controller만 생성될 수 있을까요?</summary>
-  </br>
-  <p></p>
 </details>
 
 <details>
@@ -1160,6 +1262,15 @@ B+Tree
   <p>JPA와 관련된 단골문제입니다. 꼭 학습해둡시다.</p>
   <p>N + 1 쿼리는 JPA의 프록시로 인한 지연 로딩 때문에 발생합니다. 정확한 의미는 1개의 쿼리를 실행했을 때, 내부에 존재하는 컬렉션들을 조회해오면서 생기는 문제입니다. 기본적으로 되도록이면 @OneToMany의 매핑을 하지 않을 수 있다면 하지 않는 것이 최고의 예방책입니다.</p>
   <p>만약 그런 객체를 가져와야 하는 경우 Fetch Join이라고 하는 JPQL의 join fetch를 사용합니다. 쿼리 한 번으로 해결할 수 있고, 또 다른 방법으로는 EntityGraph를 사용하는 방법이 있습니다.</p>
+</details>
+
+### C
+</details>
+<details>
+  <summary>C언어 포인터란</summary>
+  </br>
+- 포인터는 어떤 변수의 주소값을 저장하는 변수입니다.
+- 포인터의 선언은 변수명 앞에 *을 붙이면 가능하고, 어떤 변수의 주소값을 얻기 위해서는 &를 붙이면 됩니다.
 </details>
 
 ### Python
@@ -1312,17 +1423,6 @@ B+Tree
 
 ### 테스트
 
-<details>
-  <summary>테스트 코드에 대해서 어떻게 생각하고, 작성하나요?</summary>
-  </br>
-  <p></p>
-</details>
-
-<details>
-  <summary>TDD를 알고 있나요? TDD에 대해서 어떻게 생각하나요?</summary>
-  </br>
-  <p></p>
-</details>
 
 <details>
   <summary>테스트 커버리지에 대해서 어떻게 생각하나요?</summary>
